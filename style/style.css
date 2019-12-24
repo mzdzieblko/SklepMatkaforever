@@ -13,21 +13,35 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 15px;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
 }
 
 .header_login {
-    display: flex;
-    list-style: none;
-} 
+  display: flex;
+  list-style: none;
+}
 .header_search {
-    display: flex;
-    list-style: none;
-} 
+  display: flex;
+  list-style: none;
+}
+
+.search {
+  .search__container {
+    padding-top: 64px;
+  }
+
+  .search__title {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: #ff8b88;
+  }
+
+  
 .header_menu {
-    display: flex;
-    list-style: none;
-} 
+  display: flex;
+  list-style: none;
+}
