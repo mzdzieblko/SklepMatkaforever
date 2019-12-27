@@ -7,10 +7,11 @@
     <title>Projekt Sklepu Matkaforever</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <header class="header">
-      <div class="header_logo">
+      <div class="header__logo">
         <img
           srcset=""
           sizes=""
@@ -19,69 +20,72 @@
         />
       </div>
 
-      <section class="header_list">
-        <ul class="header_login">
+      <nav class="header__list">
+        <ul class="header__login">
           <li>Zarejestruj się</li>
           <li>Zaloguj się</li>
         </ul>
-        <ul class="header_search">
+        <ul class="header__search">
           <div class="search__container">
             <input class="search__input" type="text" placeholder="dupa" />
           </div>
 
           <li>Koszyk</li>
         </ul>
-        <ul class="header_menu">
-          <li>home</li>
-          <li>KOBIETA</li>
-          <li>MAMA</li>
-          <li>BIZNESWOMAN</li>
+        <ul class="header__menu">
+          <li class="header__menu-item">home</li>
+          <li class="header__menu-item">KOBIETA</li>
+          <li class="header__menu-item">MAMA</li>
+          <li class="header__menu-item">BIZNESWOMAN</li>
         </ul>
-      </section>
+      </nav>
     </header>
 
     <main class="main">
-      <section class="main_slideShow">
+      <article class="main__slide-show">
         <img
           src="assets/przod720.png"
           alt="Planer365dni NETWORKMARKETERA"
           srcset=""
         />
-      </section>
-      <section class="main_gallery">
+      </article>
+      <article class="main__gallery">
         <img
-          class="main_photo"
+          class="main__photo"
           src="assets/logo320.png"
           alt="logo_matkaforever"
           srcset=""
         />
         <img
-          class="main_photo"
+          class="main__photo"
           src="assets/logo320.png"
           alt="logo_matkaforever"
           srcset=""
         />
         <img
-          class="main_photo"
+          class="main__photo"
           src="assets/logo320.png"
           alt="logo_matkaforever"
           srcset=""
         />
         <img
-          class="main_photo"
+          class="main__photo"
           src="assets/logo320.png"
           alt="logo_matkaforever"
           srcset=""
         />
-      </section>
-      <section class="main_newsletter">
-        <h2 class="main_newsletterTitle">Newsletter</h2>
+      </article>
+      <section class="main__newsletter">
+        <h2 class="main__newsletter-title">Newsletter</h2>
 
-        <label class="main_newsletterLabel" for="email"
+        <label class="main__newsletter-label" for="email"
           >Podaj swój adres e-mail, jeżeli chcesz otrzymywać informacje o
           nowościach i promocjach.
         </label>
-        <section class="main_input">
+      </section>
+      
+        
+        <article class="main__input">
           <input
             type="email"
             id="email"
@@ -89,38 +93,44 @@
             name="email"
             size="80"
           />
-          <button class="main_button" type="submit">Zapisz się</button>
-        </section>
+          <button class="main__button" type="submit">Zapisz się</button>
+        </article>
       </section>
     </main>
     <footer class="footer">
-      <section class="footer_menu">
-        <ul class="footer_help">
-          <li>Zwroty i reklamacje</li>
-          <li>Regulamin</li>
+      <article class="footer__menu">
+        <ul class="footer__help">
+          <a class="footer__link" href=""><li>Zwroty i reklamacje</li></a>
+          <a class="footer__link" href=""><li>Regulamin</li></a>
         </ul>
-        <ul class="footer_account">
-          <li>Twoje zamówienia</li>
-          <li>Ustawienia konta</li>
-          <li>Przechowalnia</li>
+        <ul class="footer__account">
+          <a class="footer__link" href=""><li>Twoje zamówienia</li></a>
+          <a class="footer__link" href=""><li>Ustawienia konta</li></a>
+          <a class="footer__link" href=""><li>Przechowalnia</li></a>
         </ul>
 
-        <ul class="footer_payment">
-          <li>Formy płatności</li>
+        <ul class="footer__payment">
+          <a class="footer__link" href="">
+            <li>Formy płatności</li>
+          </a>
         </ul>
-        <ul class="footer_info">
-          <li>Polityka prywatności</li>
+        <ul class="footer__info">
+          <a class="footer__link" href="">
+            <li>Polityka prywatności</li>
+        </a>
+          </ul>
+        <ul class="footer__about">
+          <a class="footer__link" href="">
+            <li>Kontakt i dane firmy</li>
+          </a>
         </ul>
-        <ul class="about">
-          <li>Kontakt i dane firmy</li>
-        </ul>
-      </section>
+      </article>
 
-      <section class="footer_link">
-        <a href="https://github.com/mzdzieblko/SklepMatkaforever"
-          >Projekt mateuszzdzieblko.pl</a
-        >
-      </section>
+      <article >
+        <a class="footer__link" href="https://github.com/mzdzieblko/SklepMatkaforever">
+          Projekt mzdzieblko.pl
+        </a>
+      </article>
     </footer>
   </body>
 </html>

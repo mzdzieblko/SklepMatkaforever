@@ -11,6 +11,7 @@ body {
   display: grid;
   grid-template-rows: repeat(1fr);
   grid-row-gap: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header {
@@ -19,17 +20,24 @@ body {
   align-items: center;
 }
 
-.header_login {
+.header__logo {
+  margin-left: 32px;
+}
+
+.header__list {
+  margin-right: 32px;
+}
+
+.header__login {
   display: flex;
   list-style: none;
 }
-.header_search {
+.header__search {
   display: flex;
   list-style: none;
 }
 
 .search__container {
-  padding-top: 64px;
 }
 
 .search__title {
@@ -39,9 +47,13 @@ body {
   color: #ff8b88;
 }
 
-.header_menu {
+.header__menu {
   display: flex;
   list-style: none;
+}
+
+.header__menu-item {
+  margin-left: 16px;
 }
 
 .main {
@@ -52,18 +64,18 @@ body {
   margin: 0 auto;
 }
 
-.main_gallery {
+.main__gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.main_photo {
+.main__photo {
   margin: 32px;
 }
 
-.main_newsletter {
+.main__newsletter {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,13 +91,25 @@ body {
   align-items: center;
 }
 
-.footer_menu {
+.footer__menu {
   display: flex;
-  min-width: 100vw;
-
+  min-width: 98vw;
   justify-content: space-evenly;
 }
 
-.footer_link {
+.footer__help,
+.footer__account,
+.footer__payment,
+.footer__info,
+.footer__about {
+  list-style: none;
+}
+
+ul:nth-child(2n) {
+  margin-bottom: 16px;
+}
+
+.footer__link {
   color: #dddddd;
+  text-decoration: none;
 }
