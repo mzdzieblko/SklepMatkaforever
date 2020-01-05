@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Projekt Sklepu Matkaforever</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/normalize.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="woman">
     <header class="header">
       <div class="header__logo">
         <img
           srcset=""
           sizes=""
-          src="assets/logo160.png"
+          src="../assets/logo160.png"
           alt="logo_matkaforever"
         />
       </div>
@@ -33,71 +36,40 @@
           <li>Koszyk</li>
         </ul>
         <ul class="header__menu">
-          <a href="index.html"><li class="header__menu-item">HOME</li></a>
-          <a href="podstrony/kobieta.html"><li class="header__menu-item">KOBIETA</li></a>
-          
+          <a href="../index.html"><li class="header__menu-item">HOME</li></a>
+          <a href=""><li class="header__menu-item">KOBIETA</li></a>
+
           <li class="header__menu-item">MAMA</li>
           <li class="header__menu-item">BIZNESWOMAN</li>
         </ul>
       </nav>
     </header>
 
-    <main class="main">
-      <article class="main__slide-show">
-        <img
-          src="assets/przod720.png"
-          alt="Planer365dni NETWORKMARKETERA"
-          srcset=""
-        />
-      </article>
-      <article class="main__gallery">
-        <img
-          class="main__photo"
-          src="assets/logo320.png"
-          alt="logo_matkaforever"
-          srcset=""
-        />
-        <img
-          class="main__photo"
-          src="assets/logo320.png"
-          alt="logo_matkaforever"
-          srcset=""
-        />
-        <img
-          class="main__photo"
-          src="assets/logo320.png"
-          alt="logo_matkaforever"
-          srcset=""
-        />
-        <img
-          class="main__photo"
-          src="assets/logo320.png"
-          alt="logo_matkaforever"
-          srcset=""
-        />
-      </article>
-      <section class="main__newsletter">
-        <h2 class="main__newsletter-title">Newsletter</h2>
-
-        <label class="main__newsletter-label" for="email"
-          >Podaj swój adres e-mail, jeżeli chcesz otrzymywać informacje o
-          nowościach i promocjach.
-        </label>
-      </section>
-      
-        
-        <article class="main__input">
-          <input
-            type="email"
-            id="email"
-            placeholder="Wpisz adres e-mail"
-            name="email"
-            size="80"
-          />
-          <button class="main__button" type="submit">Zapisz się</button>
+    <main class="wmain">
+      <aside class="wmain__menu">
+        <div class="wmain__menu--header">
+          <p>"ikona "</p>
+          <p>nazwa podkategorii</p>
+        </div>
+        <div class="wmain__menu--bar">
+          <p>MENU</p>
+        </div>
+        <ul class="wmain__menu--list">
+          <a href=""><li>KOBIETA</li></a>
+          <a href=""><li>MAMA</li></a>
+          <a href=""><li>BIZNESWOMAN</li></a>
+        </ul>
+      </aside>
+      <section class="wmain__content">
+        <article class="wmain__content--title">
+          <h1>Artykuły przeznaczone dla kobiet</h1>
         </article>
+        <section class="wmain__content--article">
+          <p>Nie znaleziono produktów spełniających podane kryteria</p>
+        </section>
       </section>
     </main>
+
     <footer class="footer">
       <article class="footer__menu">
         <ul class="footer__help">
@@ -118,8 +90,8 @@
         <ul class="footer__info">
           <a class="footer__link" href="">
             <li>Polityka prywatności</li>
-        </a>
-          </ul>
+          </a>
+        </ul>
         <ul class="footer__about">
           <a class="footer__link" href="">
             <li>Kontakt i dane firmy</li>
@@ -127,8 +99,11 @@
         </ul>
       </article>
 
-      <article >
-        <a class="footer__link" href="https://github.com/mzdzieblko/SklepMatkaforever">
+      <article>
+        <a
+          class="footer__link"
+          href="https://github.com/mzdzieblko/SklepMatkaforever"
+        >
           Projekt mzdzieblko.pl
         </a>
       </article>
