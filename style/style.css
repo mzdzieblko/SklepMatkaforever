@@ -40,6 +40,10 @@ body {
   list-style: none;
 }
 
+.header__menu--item {
+  color: #000000;
+}
+
 /* .search__container {
 } */
 
@@ -54,6 +58,10 @@ body {
   display: flex;
   padding: 0px;
   list-style: none;
+}
+
+.header__menu a {
+  text-decoration: none;
 }
 
 .header__menu :nth-child(n + 2),
@@ -136,13 +144,21 @@ ul:nth-child(2n) {
   display: flex;
 }
 
+.wmain__menu--bar p {
+  border: solid 2px #000;
+
+  border-radius: 32px;
+
+  padding-left: 8px;
+}
+
 .wmain__menu--header p:nth-child(2) {
   padding-left: 16px;
 }
 
 .wmain__menu--list {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 8px;
 }
 
 .wmain__menu--list a {
