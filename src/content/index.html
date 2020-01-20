@@ -1,40 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
-
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
-
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
-
+    <title>Projekt Sklepu Matkaforever</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="../scss/_normalize.scss" />
+    <link rel="stylesheet" href="../scss/_variables.scss" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <h1>Hello world - with simple PWA support!</h1>
+    <header class="header">
+      <div class="header__logo">
+        <img
+          srcset=""
+          sizes=""
+          src="../assets/img/logo160.png"
+          alt="logo_matkaforever"
+        />
+      </div>
 
-    <script src="js/main.js"></script>
+      <nav class="header__list">
+        <ul class="header__login">
+          <li>Zarejestruj się</li>
+          <li>Zaloguj się</li>
+        </ul>
+        <ul class="header__search">
+          <div class="search__container">
+            <input class="search__input" type="text" placeholder="dupa" />
+          </div>
+
+          <li>Koszyk</li>
+        </ul>
+        <ul class="header__menu">
+          <a href="index.html"><li class="header__menu--item">HOME</li></a>
+          <a href="podstrony/kobieta.html"><li class="header__menu--item">KOBIETA</li></a>
+          <a href="podstrony/mama.html"><li class="header__menu--item">MAMA</li></a>
+          <a href="podstrony/bizneswoman.html"><li class="header__menu--item">BIZNESWOMAN</li></a>
+          
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <article class="main__slide-show">
+        <img
+          src="../assets/img/przod720.png"
+          alt="Planer365dni NETWORKMARKETERA"
+          srcset=""
+        />
+      </article>
+      <article class="main__gallery">
+        <img
+          class="main__photo"
+          src="../assets/img/logo320.png"
+          alt="logo_matkaforever"
+          srcset=""
+        />
+        <img
+          class="main__photo"
+          src="../assets/img/logo320.png"
+          alt="logo_matkaforever"
+          srcset=""
+        />
+        <img
+          class="main__photo"
+          src="../assets/img/logo320.png"
+          alt="logo_matkaforever"
+          srcset=""
+        />
+        <img
+          class="main__photo"
+          src="../assets/img/logo320.png"
+          alt="logo_matkaforever"
+          srcset=""
+        />
+      </article>
+      <section class="main__newsletter">
+        <h2 class="main__newsletter-title">Newsletter</h2>
+
+        <label class="main__newsletter-label" for="email"
+          >Podaj swój adres e-mail, jeżeli chcesz otrzymywać informacje o
+          nowościach i promocjach.
+        </label>
+      </section>
+      
+        
+        <article class="main__input">
+          <input
+            type="email"
+            id="email"
+            placeholder="Wpisz adres e-mail"
+            name="email"
+            size="80"
+          />
+          <button class="main__button" type="submit">Zapisz się</button>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <article class="footer__menu">
+        <ul class="footer__help">
+          <a class="footer__link" href=""><li>Zwroty i reklamacje</li></a>
+          <a class="footer__link" href=""><li>Regulamin</li></a>
+        </ul>
+        <ul class="footer__account">
+          <a class="footer__link" href=""><li>Twoje zamówienia</li></a>
+          <a class="footer__link" href=""><li>Ustawienia konta</li></a>
+          <a class="footer__link" href=""><li>Przechowalnia</li></a>
+        </ul>
+
+        <ul class="footer__payment">
+          <a class="footer__link" href="">
+            <li>Formy płatności</li>
+          </a>
+        </ul>
+        <ul class="footer__info">
+          <a class="footer__link" href="">
+            <li>Polityka prywatności</li>
+        </a>
+          </ul>
+        <ul class="footer__about">
+          <a class="footer__link" href="">
+            <li>Kontakt i dane firmy</li>
+          </a>
+        </ul>
+      </article>
+
+      <article >
+        <a class="footer__link" href="https://github.com/mzdzieblko/SklepMatkaforever">
+          Projekt mzdzieblko.pl
+        </a>
+      </article>
+    </footer>
   </body>
 </html>
